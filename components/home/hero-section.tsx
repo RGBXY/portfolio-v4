@@ -1,37 +1,81 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import { Button } from "../ui/button";
+import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="w-full h-full pt-20 flex items-center justify-center text-center">
-      <div className="space-y-8 flex flex-col items-center w-full">
+    <section className="w-full h-full pt-24 flex items-center justify-center text-center overflow-x-hidden">
+      <div className="space-y-4 flex flex-col items-center w-full ">
         <Link href={"#contact"}>
-          <div className="border p-1.5 rounded-full bg-linear-to-br/srgb from-white via-gray-100 to-white shadow">
-            <div className="border flex gap-2 text-gray-800 font-medium items-center w-full h-full rounded-full py-1 px-4">
-              <span>{"👋 Let's Get Connect"}</span>
-            </div>
+          <div className="border flex gap-2 text-gray-800 shadow font-medium items-center w-full h-full rounded-full py-2 md:px-4 px-2 text-sm md:text-base">
+            <span>{"👋 Let's Get Connect"}</span>
           </div>
         </Link>
 
-        <div className="text-4xl font-medium leading-tight tracking-tighter text-text-primary md:text-7xl md:leading-24">
-          <div className="flex items-center gap-6">
-            <h1 className="text-black">{"Hey, I'm"}</h1>
-            <div className="w-24 h-24 border p-2 rounded-2xl bg-linear-to-br/srgb from-white via-gray-100 to-white shadow hover:rotate-8 transition">
-              <Image className="w-full h-full shadow-inner border border-gray-300 rounded-xl overflow-hidden flex items-center justify-center" src={"/image/profile.webp"} alt="profile" width={300} height={300} />
+        <div className="text-4xl font-medium leading-snug tracking-tighter text-text-primary md:text-6xl md:leading-20 mt-3">
+          <div className="flex items-center md:gap-6 gap-4">
+            <h1 className="text-black">{"I'm"}</h1>
+            <div className="md:w-16 md:h-16 w-14 h-14 rounded-xl shadow-md shadow-gray-600 border rotate-6 hover:-rotate-6 transition overflow-hidden ">
+              <Image className="w-full h-full rounded-lg flex items-center justify-center object-cover" src={"/image/profile.webp"} alt="profile" width={300} height={300} />
             </div>
-            <h1 className="text-black">Derren Amadeo!</h1>
+            <h1 className="text-black text-nowrap">
+              Derren Amadeo<span className="font-serif">!</span>
+            </h1>
           </div>
-          <h1 className="text-black">Front-End Developer</h1>
+          <h1 className="text-black">
+            <span className="font-serif tracking-wide italic">a Creative</span> Developer
+          </h1>
         </div>
 
-        <p className="max-w-sm mx-auto w-full">Blending design and code to create smooth and meaningful user experiences.</p>
+        <p className="max-w-md mx-auto w-full text-gray-600">I care about how things feel, not just how they work. I believe good software should feel human.</p>
 
-        <div className="mt-10 w-full flex items-center justify-center">
-          <div className="h-70 w-87.5 bg-gray-100 border border-gray-300  rounded-xl -rotate-4 z-5 hover:-rotate-8 hover:scale-110 transition"></div>
-          <div className="h-70 w-87.5 bg-gray-100 border border-gray-300  rounded-xl rotate-4 translate-y-6 -ml-10 z-4 hover:rotate-8 hover:scale-110 transition"></div>
-          <div className="h-70 w-87.5 bg-gray-100 border border-gray-300  rounded-xl -ml-10 -rotate-4 z-3 hover:-rotate-8 hover:scale-110 transition"></div>
-          <div className="h-70 w-87.5 bg-gray-100 border border-gray-300  rounded-xl -ml-10 rotate-4 translate-y-6 hover:rotate-8 hover:scale-110 transition"></div>
+        <div className="flex items-center my-4">
+          <Link href={"/about"}>
+            <Button size={"lg"} className="text-base font-normal rounded-full px-4 group">
+              <span className="ms-2">Get to Know Me</span>
+              <div className="bg-linear-to-tr from-primary to-gray-700 rounded-full h-10 w-10 translate-x-2 flex items-center justify-center group-hover:from-primary/20">
+                <ArrowRight />
+              </div>
+            </Button>
+          </Link>
+        </div>
+
+        <div className="mt-10 relative h-fit w-full overflow-x-clip">
+          <div className="absolute left-0 top-0 bg-linear-to-r from-background/80 to-transparent from-1%  w-20 h-full z-20"></div>
+
+          <div className="flex items-center justify-center gap-5">
+            <div className="relative shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
+              <div className="w-full h-full bg-gray-100 px-2 rounded-lg shadow-xl flex items-center">
+                <Image src={"/image/hero-3.png"} alt="image-2" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
+                <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+              </div>
+            </div>
+
+            <div className="relative  shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
+              <div className="w-full h-full bg-gray-100 px-2 rounded-lg shadow-xl flex items-center">
+                <Image src={"/image/hero-3.png"} alt="image-2" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
+                <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+              </div>
+            </div>
+            <div className="relative  shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
+              <div className="w-full h-full bg-gray-100 px-2 rounded-lg shadow-xl flex items-center">
+                <Image src={"/image/hero-3.png"} alt="image-2" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
+                <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="absolute right-0 top-0 bg-linear-to-l from-background/80 to-transparent from-1%  w-20 h-full z-20"></div>
         </div>
       </div>
     </section>

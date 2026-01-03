@@ -39,7 +39,7 @@ const WorkCard = () => {
 
 const WorkCardDummy = () => {
   return (
-    <div className="w-92 h-fit lg:max-w-100 max-h-120 transition border border-gray-300 rounded-xl overflow-hidden p-4">
+    <div className="w-92 h-fit md:block hidden lg:max-w-100 max-h-120 transition border border-gray-300 rounded-xl overflow-hidden p-4">
       <div className="aspect-3/2 bg-linear-to-br/srgb from-white via-gray-100 to-white border rounded-xl border-gray-300"></div>
     </div>
   );

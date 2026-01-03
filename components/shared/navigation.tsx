@@ -1,63 +1,62 @@
 "use client";
 
+import { FileTextIcon, GithubLogoIcon, LinkedinLogoIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
 
 const Navigation = () => {
   const path = usePathname();
 
-  return (
-    <nav className="flex items-center justify-between w-6xl h-20 mx-auto ">
-      <h1 className="font-semibold text-xl">Derren Amadeo</h1>
+  const dataLink = [
+    {
+      name: "Home",
+      link: "/",
+      icon: "🏚️",
+    },
+    {
+      name: "About",
+      link: "/about",
+      icon: "👨‍💻",
+    },
+    {
+      name: "Work",
+      link: "/work",
+      icon: "🎨",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+      icon: "☎️",
+    },
+  ];
 
-      <div className="flex items-center gap-6">
-        <div className="flex items-center gap-6 text-sm font-medium">
-          <Link href={"/"} className={path === "/" ? "text-black" : "text-gray-600"}>
-            <span>Home</span>
+  return (
+    <nav className=" flex items-center justify-between w-full max-w-7xl px-7 pt-2 lg:pt-0 lg:px-12 h-20 mx-auto">
+      <h1 className="font-bold text-black text-shadow-sm text-3xl">Drrn.</h1>
+
+      <div className="fixed flex flex-row items-center w-fit h-fit lg:gap-10 gap-5 font-medium bottom-5 lg:top-3 left-1/2 border-gray-400 -translate-x-1/2 z-50 bg-white/40 backdrop-blur-xl  py-3 px-6 rounded-full">
+        {dataLink.map((data) => (
+          <Link key={data.name} href={data.link} className={cn(path === data.link ? "bg-gray-200" : "hover:bg-gray-200", "text-black px-4 py-1.5 rounded-full flex gap-1 transition")}>
+            <span className={cn(path === data.link ? "block" : "hidden", "lg:block")}>{data.name}</span>
+            <span className="lg:hidden">{data.icon}</span>
           </Link>
-          <Link href={"/about"} className={path === "/about" ? "text-black" : "text-gray-600"}>
-            <span>About</span>
-          </Link>
-          <Link href={"/work"} className={path === "/work" ? "text-black" : "text-gray-600"}>
-            {" "}
-            <span>Work</span>
-          </Link>
-          <Link href={"/tools"} className={path === "/tools" ? "text-black" : "text-gray-600"}>
-            {" "}
-            <span>Tools</span>
-          </Link>
-        </div>
+        ))}
+      </div>
+
+      <div className="flex justify-end">
+        <Button variant={"ghost"} size={"icon-lg"}>
+          <GithubLogoIcon size={25} />
+        </Button>
+        <Button variant={"ghost"} size={"icon-lg"}>
+          <LinkedinLogoIcon size={25} />
+        </Button>
+        <Button variant={"ghost"} size={"icon-lg"}>
+          <FileTextIcon size={25} />
+        </Button>
       </div>
     </nav>
-
-    // <nav className="flex items-center justify-between w-6xl relative h-25 mx-auto shadow border border-gray-300 px-5 rounded-xl -translate-y-5 pt-5">
-    //   <h1 className="font-semibold text-xl">Derren A.</h1>
-
-    //   <div className="flex items-center absolute left-1/2 -translate-x-1/2 border shadow-inner border-gray-300 px-2.5 py-2 rounded-full font-medium">
-    //     <Link href={"/"}>
-    //       <div className="rounded-full bg-gray-100 px-4 py-1 border text-gray-700 border-gray-300 shadow-inner">
-    //         <span>Home</span>
-    //       </div>
-    //     </Link>
-    //     <Link href={"/"}>
-    //       <div className="rounded-full px-4 py-1">
-    //         <span>About</span>
-    //       </div>
-    //     </Link>
-    //     <Link href={"/"}>
-    //       <div className="rounded-full  px-4 py-1">
-    //         <span>Work</span>
-    //       </div>
-    //     </Link>
-    //     <Link href={"/"}>
-    //       <div className="rounded-full  px-4 py-1">
-    //         <span>Tools</span>
-    //       </div>
-    //     </Link>
-    //   </div>
-
-    //   <div className="flex items-center gap-3 border border-gray-300 px-8 py-3 rounded-full font-medium">Contact</div>
-    // </nav>
   );
 };
 

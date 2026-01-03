@@ -5,8 +5,8 @@ import WorkSection from "@/components/home/work-section";
 
 export default function Home() {
   return (
-    <main className="h-full w-full flex justify-center ">
-      <div className="w-6xl h-full space-y-40">
+    <main className="h-full w-full flex justify-center">
+      <div className="max-w-7xl w-full h-full lg:space-y-40 md:space-y-30 space-y-25 bg-background z-10 pb-14 px-5">
         <HeroSection />
         <AboutSection />
         <WorkSection />

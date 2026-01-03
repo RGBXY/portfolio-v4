@@ -4,9 +4,9 @@ import { Button } from "../ui/button";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-fit mt-14 border-t border-gray-300 relative">
+    <footer className="w-full h-fit border-t border-gray-300 relative">
       <div className="absolute top-0 left-0 h-full w-full bg-[repeating-linear-gradient(45deg,#36415320_0px,#36415320_1px,transparent_1px,transparent_8px)]"></div>
-      <div className="w-6xl mx-auto grid grid-cols-3 z-10 justify-between bg-white border-x border-gray-300 relative">
+      <div className="w-7xl mx-auto grid grid-cols-3 z-10 justify-between bg-white border-x border-gray-300 relative">
         <div className="space-y-3 p-10">
           <h1 className="text-2xl font-semibold">Derren Amadeo</h1>
           <p className="text-gray-700 max-w-70 text-lg">I'm Derren - a front-end developer. Thanks for checking out my site!</p>
