@@ -15,7 +15,6 @@ const About = () => {
         <ExperienceAbout />
         <SkillsAbout />
         <IloveAbout />
-        <Test />
       </div>
     </main>
   );

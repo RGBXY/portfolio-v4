@@ -20,23 +20,12 @@ const IloveAbout = () => {
           <div className="col-span-5 row-span-7">
             <div className="h-full overflow-hidden relative group bg-gray-100 p-6 hover:shadow-lg hover:-translate-y-1 transition bg-linear-to-br from-white via-gray-100 to-white border border-gray-300 rounded-xl">
               <div className="text-center mb-8">
-                <h1 className="text-xl font-semibold mb-1">Read and Watch</h1>
+                <h1 className="text-xl font-semibold mb-1">Watching</h1>
                 <p className="text-gray-700">The Alchemist and The Dark Side of The Moon</p>
               </div>
 
-              <div className="absolute -bottom-5 left-15 h-50 w-45 border-gray-300 -rotate-8 group-hover:-rotate-4 transition">
-                <Image src={"/image/book-cover.png"} alt="hai" width={400} height={400} className="h-full w-full mix-blend-plus-lighter object-top object-cover" />
-              </div>
-              <div className="absolute -bottom-22 right-15 h-50 w-50 rotate-8 group-hover:rotate-4 transition ">
-                <div className="relative h-full w-full">
-                  <div className="w-full h-full z-10 relative bg-[url('/image/album-effect.png')]">
-                    <Image src={"/image/album.png"} alt="hai" width={400} height={400} className="h-full w-full mix-blend-plus-lighter" />
-                  </div>
-                  <div className="absolute -top-18 rounded-full h-45 w-45 -z-10 bg-black left-1/2 -translate-x-1/2 flex items-center justify-center">
-                    <Image src={"/image/vinyl.webp"} alt="hai" width={400} height={400} className="h-full w-full animate-spin relative" />
-                    <Image src={"/image/album.png"} alt="hai" width={400} height={400} className="h-16 w-16 z-10 absolute rounded-full animate-spin" />
-                  </div>
-                </div>
+              <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 w-79 group-hover:scale-104 border-gray-300 transition">
+                <Image src={"/image/tv.png"} alt="hai" width={400} height={400} className="h-full" />
               </div>
             </div>
           </div>

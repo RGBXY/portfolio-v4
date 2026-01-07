@@ -9,15 +9,6 @@ const HeroAbout = () => {
         <div className="flex flex-col items-center">
           <Jumbotron title="👨‍💻 About Me" subTitle="Here’s a Little More About" primary="Who I am!" description="A simple introduction to my work, my interests, and the things I enjoy." />
 
-          {/* <Link href={"/about"}>
-                <Button size={"lg"} className="text-base font-normal rounded-full px-4 group">
-                  <span className="ms-2">More Profesional</span>
-                  <div className="bg-linear-to-tr from-primary to-gray-700 rounded-full h-10 w-10 translate-x-2 flex items-center justify-center group-hover:from-primary/20">
-                    <ArrowRight />
-                  </div>
-                </Button>
-              </Link> */}
-
           <div className="mt-14 w-full flex items-center justify-center font-serif text-center">
             <div className="lg:h-80 lg:w-70 md:h-80 md:w-70 h-40 w-35 flex flex-col md:gap-3 gap-0.5 md:p-4 p-2 bg-white border border-gray-300 shadow-xl -rotate-4 z-5 hover:rotate-0 hover:scale-105 transition">
               <Image src={"/image/about-music.png"} alt="image-2" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />

@@ -10,10 +10,11 @@ const AboutSection = () => {
       <div className="flex items-center justify-center flex-col gap-8">
         <SectionHeader title="About" subTitle="Here's a little things about" strong="me" />
 
-        <div className="max-w-xl mx-auto text-center text-gray-600 font-medium leading-6 space-y-4 md:text-lg">
-          <p className="">Derren Amadeo — a Front-End Developer with 1 years of experience shaping products and high-impact systems through UX research, psychology, and product strategy to balance user needs and business goals.</p>
-          <p className="">I design for humans, but I’m shaped by the world beyond screens.</p>
-          <p className="">My journey into design began with a simple curiosity — how people think, feel, and interact with technology. Over time, that curiosity evolved..</p>
+        <div className="max-w-xl mx-auto text-center text-gray-600 font-medium leading-6 space-y-4 md:text-lg mb-1">
+          <p className="">Derren Amadeo — a web developer with over 2 years of experience building thoughtful, user-focused websites. I believe good websites are not built just to work, but built to connect with people and ideas.</p>
+          <p className="">
+            I enjoy turning ideas into clean, functional interfaces, while paying attention to details that make digital experiences feel natural, intuitive, and human. Beyond the screen, I love traveling and exploring new places.
+          </p>
         </div>
 
         <Link href={"/about"}>
@@ -26,17 +27,17 @@ const AboutSection = () => {
         </Link>
 
         <div className="hidden lg:block">
-          <div className="h-70 w-60 rotate-5 border border-gray-400 bg-background p-4 absolute -top-10 left-10">
+          <div className="h-70 w-60 rotate-5 hover:rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute -top-10 left-10">
             <Image src={"/image/about-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
-          <div className="h-70 w-60 -rotate-5 border border-gray-400 bg-background p-4 absolute -top-10 right-10">
-            <Image src={"/image/about-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+          <div className="h-70 w-60 -rotate-5 hover:-rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute -top-10 right-10">
+            <Image src={"/image/hero-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
-          <div className="h-70 w-60 -rotate-5 border border-gray-400 bg-background p-4 absolute top-60 left-5">
-            <Image src={"/image/about-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+          <div className="h-70 w-60 -rotate-5 hover:-rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute top-60 left-5">
+            <Image src={"/image/hero-3.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
-          <div className="h-70 w-60 rotate-5 border border-gray-400 bg-background p-4 absolute top-60 right-5">
-            <Image src={"/image/about-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+          <div className="h-70 w-60 rotate-5 hover:rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute top-60 right-5">
+            <Image src={"/image/about-explore.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
         </div>
       </div>

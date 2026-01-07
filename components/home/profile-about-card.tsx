@@ -3,14 +3,19 @@ import Image from "next/image";
 const ProfileAboutCard = () => {
   return (
     <div className="relative h-full flex overflow-hidden justify-between hover:shadow-lg hover:-translate-y-1 transition bg-linear-to-br from-white to-gray-100 border border-gray-300 rounded-xl p-6">
-      <div className="space-y-4 flex-1">
-        <h1 className="text-xl font-semibold">More About Me!</h1>
-        <p className="text-lg text-gray-700">Front-end developer with 2 <br /> years experience. Tech enthusiast. <br /> Music lover. <br /> Click to know more about me</p>
+      <div className="flex flex-col justify-between flex-1">
+        <div>
+          <h1 className="text-xl font-semibold mb-1.5">Reading</h1>
+          <p className="text-gray-600 w-50">Books really change the way I see the world</p>
+        </div>
+        <div className="text-gray-600 text-xs" >
+          <p className="">The Alchemist - Paulo Choelo</p>
+        </div>
       </div>
-      <div className="w-45 h-55 right-5 absolute">
+      <div className="w-45 h-60 right-5 absolute">
         <Image
-          className="w-full h-full z-10 -rotate-6 group-hover:-rotate-8 group-hover:scale-105 transition relative shadow-inner border object-cover border-gray-300 rounded-xl overflow-hidden flex items-center justify-center"
-          src={"/image/profile.webp"}
+          className="w-full h-full z-10 -rotate-6 group-hover:-rotate-8 group-hover:scale-105 transition relative shadow-inner border object-cover object-top border-gray-300 rounded-xl overflow-hidden flex items-center justify-center"
+          src={"/image/book-cover.png"}
           alt="profile"
           width={800}
           height={800}

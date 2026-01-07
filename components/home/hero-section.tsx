@@ -4,10 +4,25 @@ import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
+  const project_data = [
+    {
+      id: 1,
+      image: "/project/project-mu-2.png",
+    },
+    {
+      id: 2,
+      image: "/project/project-mu-1.png",
+    },
+    {
+      id: 3,
+      image: "/project/project-mu-3.png",
+    },
+  ];
+
   return (
-    <section className="w-full h-full pt-24 flex items-center justify-center text-center overflow-x-hidden">
+    <section id="hero" className="w-full h-full pt-24 flex items-center justify-center text-center overflow-x-hidden">
       <div className="space-y-4 flex flex-col items-center w-full ">
-        <Link href={"#contact"}>
+        <Link href={"/contact"}>
           <div className="border flex gap-2 text-gray-800 shadow font-medium items-center w-full h-full rounded-full py-2 md:px-4 px-2 text-sm md:text-base">
             <span>{"👋 Let's Get Connect"}</span>
           </div>
@@ -42,40 +57,37 @@ const HeroSection = () => {
         </div>
 
         <div className="mt-10 relative h-fit w-full overflow-x-clip">
-          <div className="absolute left-0 top-0 bg-linear-to-r from-background/80 to-transparent from-1%  w-20 h-full z-20"></div>
+          <div className="absolute left-0 top-0 bg-linear-to-r from-background to-transparent from-1%  w-20 h-full z-20"></div>
+          <div className="absolute right-0 top-0 bg-linear-to-l from-background to-transparent from-1%  w-20 h-full z-20"></div>
 
-          <div className="flex items-center justify-center gap-5">
-            <div className="relative shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
-              <div className="w-full h-full bg-gray-100 px-2 rounded-lg shadow-xl flex items-center">
-                <Image src={"/image/hero-3.png"} alt="image-2" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
-                <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-              </div>
+          <div className="flex items-center justify-center animate-marquee w-max will-change-transform hover:paused">
+            <div className="flex items-center justify-center gap-5 pe-5">
+              {project_data.map((data) => (
+                <div key={data.id} className="relative shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
+                  <div className="w-full h-full border bg-gray-50 px-3 rounded-lg shadow-xl flex items-center">
+                    <Image src={data.image} alt="Project" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
+                    <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                    <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                    <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                    <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                  </div>
+                </div>
+              ))}
             </div>
-
-            <div className="relative  shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
-              <div className="w-full h-full bg-gray-100 px-2 rounded-lg shadow-xl flex items-center">
-                <Image src={"/image/hero-3.png"} alt="image-2" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
-                <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-              </div>
-            </div>
-            <div className="relative  shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
-              <div className="w-full h-full bg-gray-100 px-2 rounded-lg shadow-xl flex items-center">
-                <Image src={"/image/hero-3.png"} alt="image-2" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
-                <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-                <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
-              </div>
+            <div className="flex items-center justify-center gap-5 pe-5">
+              {project_data.map((data) => (
+                <div key={data.id} className="relative shrink-0 lg:h-85 lg:w-105 h-80 w-100 rounded-xl flex flex-col md:gap-3 gap-0.5 p-6 bg-white border border-gray-200 z-5 transition">
+                  <div className="w-full h-full border bg-gray-50 px-3 rounded-lg shadow-xl flex items-center">
+                    <Image src={data.image} alt="Project" width={400} height={400} className="w-full lg:h-63 h-58 object-cover rounded-lg" />
+                    <div className="absolute left-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                    <div className="absolute right-3 top-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                    <div className="absolute left-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                    <div className="absolute right-3 bottom-3 h-2 w-2 bg-linear-to-b from-gray-400 to-gray-100 rounded-full"></div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-
-          <div className="absolute right-0 top-0 bg-linear-to-l from-background/80 to-transparent from-1%  w-20 h-full z-20"></div>
         </div>
       </div>
     </section>
