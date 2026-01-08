@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
-import { WorkCard, WorkCardDummy } from "./work-card";
 import Link from "next/link";
 import SectionHeader from "../shared/section-header";
+import { WorkCard, WorkCardDummy } from "../work/work-card";
 
 const WorkSection = () => {
   const work_data = [
