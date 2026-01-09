@@ -73,7 +73,7 @@ const AlbumAboutCard = () => {
         <div className="flex shrink-0 gap-8 pe-8">
           {album_data.map((data) => (
             <Link target="__blank" key={data.id} href={data.link}>
-              <div className="h-35 w-35 relative shadow-md shadow-gray-400 group shrink-0 flex justify-center items-center">
+              <div className="h-35 w-35 relative shadow-md bg-white shadow-gray-400 group shrink-0 flex justify-center items-center">
                 <Image className="w-full h-full" src={data.img} alt={data.name} width={800} height={800} />
                 <div className="absolute group-hover:-translate-y-12 top-0 rounded-full -z-1 h-[92%] w-[92%] duration-300 bg-black left-1/2 -translate-x-1/2 flex items-center justify-center transition">
                   <Image src={"/image/vinyl.webp"} alt="hai" width={400} height={400} className="h-full w-full paused group-hover:play-state-initial animate-spin relative" />
@@ -86,7 +86,7 @@ const AlbumAboutCard = () => {
 
         <div aria-hidden className="flex shrink-0 gap-8 pe-8">
           {album_data.map((data) => (
-            <div key={data.id} className="h-35 w-35 relative group shadow-md shadow-gray-400 shrink-0 flex justify-center items-center">
+            <div key={data.id} className="h-35 w-35 bg-white relative group shadow-md shadow-gray-400 shrink-0 flex justify-center items-center">
               <Image className="w-full h-full" src={data.img} alt={data.name} width={800} height={800} />
               <div className="absolute group-hover:-translate-y-12 top-0 rounded-full -z-1 h-[92%] w-[92%] duration-300 bg-black left-1/2 -translate-x-1/2 flex items-center justify-center transition">
                 <Image src={"/image/vinyl.webp"} alt="hai" width={400} height={400} className="h-full w-full paused group-hover:play-state-initial animate-spin  relative" />
