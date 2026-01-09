@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Jumbotron from "../shared/jumbotron";
 
-const HeroAbout = () => {
+const AboutHero = () => {
   return (
     <section className="w-full h-full pt-20 ">
       <div className="w-full h-full flex flex-col items-center justify-center space-y-25 ">
@@ -23,7 +23,7 @@ const HeroAbout = () => {
               <h1 className="md:text-3xl">Traveling</h1>
             </div>
             <div className="lg:h-80 lg:w-70 h-80 w-70 lg:flex flex-col hidden gap-3 p-4 bg-white border border-gray-300 shadow-xl -ml-6 rotate-4 translate-y-6 hover:rotate-0 hover:scale-105 transition">
-              <Image src={"/image/hero-5.jpg"} alt="image-1" width={400} height={400} className="w-full lg:h-59 h-57 object- border border-gray-300cover" />
+              <Image src={"/image/hero-6.png"} alt="image-1" width={400} height={400} className="w-full lg:h-59 h-57 object- border border-gray-300 object-cover" />
               <h1 className="md:text-3xl">Bookies</h1>
             </div>
           </div>
@@ -33,4 +33,4 @@ const HeroAbout = () => {
   );
 };
 
-export default HeroAbout;
+export default AboutHero;

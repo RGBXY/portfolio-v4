@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from "../shared/section-header";
 import { AlbumAboutCard, BookAboutCard, GameAboutCard, MovieAboutCard } from "./about-card";
 
-const IloveAbout = () => {
+const AboutHobbies = () => {
   return (
     <section className="w-full h-full">
       <div className="max-w-6xl w-full h-full flex flex-col items-center justify-center gap-16 mx-auto">
@@ -26,4 +26,4 @@ const IloveAbout = () => {
   );
 };
 
-export default IloveAbout;
+export default AboutHobbies;

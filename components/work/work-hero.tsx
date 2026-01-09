@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
-const HeroWork = () => {
+const WorkHero = () => {
   return (
     <section className="w-full h-full pt-20">
       <div className="w-full h-full flex flex-col items-center justify-center space-y-9">
@@ -22,4 +22,4 @@ const HeroWork = () => {
   );
 };
 
-export default HeroWork;
+export default WorkHero;

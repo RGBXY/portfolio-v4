@@ -1,6 +1,7 @@
 "use client";
 
-import FormContact from "@/components/contact/form-contact";
+import ContactForm from "@/components/contact/contact-form";
+import { Toaster } from "@/components/ui/sonner";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,27 +14,27 @@ const Contact = () => {
     },
     {
       id: 2,
-      link: "",
+      link: "https://www.linkedin.com/in/derren-amadeo-hermawan-017306284/",
       image: "/logo/linkedin.png",
     },
     {
       id: 3,
-      link: "",
+      link: "https://www.instagram.com/derrenmadeo/",
       image: "/logo/instagram.png",
     },
     {
       id: 4,
-      link: "",
+      link: "https://x.com/DerrenAmad45080",
       image: "/logo/x.png",
     },
     {
       id: 5,
-      link: "",
+      link: "https://github.com/RGBXY",
       image: "/logo/github.png",
     },
     {
       id: 6,
-      link: "",
+      link: "https://dribbble.com/Derren_Amadeo",
       image: "/logo/dribbble.png",
     },
   ];
@@ -44,7 +45,7 @@ const Contact = () => {
         <div className="w-full h-full flex flex-col items-center justify-center space-y-9 px-4">
           <div className="text-center">
             <h1 className="text-7xl font-serif mb-3">Get in Touch!</h1>
-            <p className="w-sm text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, eaque.</p>
+            <p className="w-sm text-gray-600">Let’s get connect and we can build something meaningful together.</p>
           </div>
 
           <div className="flex flex-wrap md:flex-row flex-col gap-2 w-full h-full bg-gray-100 p-2 rounded-lg">
@@ -60,10 +61,12 @@ const Contact = () => {
               ))}
             </div>
 
-            <FormContact />
+            <ContactForm />
           </div>
         </div>
       </section>
+
+      <Toaster />
     </main>
   );
 };

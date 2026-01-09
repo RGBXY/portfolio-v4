@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import { Button } from "../ui/button";
+import { toast } from "sonner";
 
-const FormContact = () => {
+const ContactForm = () => {
   const [loading, setLoading] = useState(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -27,10 +28,10 @@ const FormContact = () => {
     setLoading(false);
 
     if (res.ok) {
-      alert("Message sent!");
+      toast.success("Message Sent Successfully.");
       form.reset();
     } else {
-      alert("Something went wrong");
+      toast.warning("Something went wrong.");
     }
   }
 
@@ -61,6 +62,7 @@ const FormContact = () => {
             <option value="Website Development">Website Development</option>
             <option value="Design UI/UX">Design UI/UX</option>
             <option value="Product Development">Product Development</option>
+            <option value="Other">Other</option>
           </select>
         </div>
 
@@ -78,4 +80,4 @@ const FormContact = () => {
   );
 };
 
-export default FormContact;
+export default ContactForm;

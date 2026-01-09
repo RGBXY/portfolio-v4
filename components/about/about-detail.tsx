@@ -1,6 +1,6 @@
 import React from "react";
 
-const AboutAbout = () => {
+const AboutDetail = () => {
   return (
     <div className="w-full h-full">
       <div className="flex justify-center">
@@ -31,4 +31,4 @@ const AboutAbout = () => {
   );
 };
 
-export default AboutAbout;
+export default AboutDetail;

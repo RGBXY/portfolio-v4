@@ -2,7 +2,7 @@ import React from "react";
 import { work_data } from "@/lib/data";
 import { WorkCard } from "./work-card";
 
-const WorkWork = () => {
+const WorkDetail = () => {
   return (
     <div className="h-full w-full overflow-hidden pt-2">
       <div className="flex flex-wrap justify-center gap-5 h-full w-full relative">
@@ -14,4 +14,4 @@ const WorkWork = () => {
   );
 };
 
-export default WorkWork;
+export default WorkDetail;

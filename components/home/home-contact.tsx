@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const ContactSSection = () => {
+const HomeContact = () => {
   return (
     <section className="w-full h-full pb-20 pt- space-y-12 overflow-hidden">
       <div className="border flex flex-col items-center justify-center md:h-100 h-80 text-center md:space-y-6 space-y-3 rounded-xl relative overflow-hidden px-2">
@@ -53,4 +53,4 @@ const ContactSSection = () => {
   );
 };
 
-export default ContactSSection;
+export default HomeContact;

@@ -19,8 +19,10 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Derren Amadeo | Portfolio",
-  description: "Derren Amadeo Hermawan Portfolio",
+  title: "Derren Amadeo | Creative Developer",
+  description: "Portfolio web developer, lihat project dan pengalaman saya.",
+  keywords: "web developer, creative developer, product engineer, portfolio, derren amadeo hermawan",
+  authors: [{ name: "Derren Amadeo" }],
 };
 
 export default function RootLayout({

@@ -4,7 +4,7 @@ import { ArrowRightIcon } from "@phosphor-icons/react/dist/ssr";
 import Link from "next/link";
 import SectionHeader from "../shared/section-header";
 
-const AboutSection = () => {
+const HomeAbout = () => {
   return (
     <section className="w-full h-full relative">
       <div className="flex items-center justify-center flex-col gap-8">
@@ -45,4 +45,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default HomeAbout;

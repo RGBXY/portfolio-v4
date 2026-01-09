@@ -11,7 +11,7 @@ interface JumbotronProps {
 const Jumbotron = ({ title, subTitle, description, primary }: JumbotronProps) => {
   return (
     <div className="space-y-4 flex flex-col items-center w-full text-center">
-      <Link href={"#contact"}>
+      <Link href={""}>
         <div className="border flex gap-2 text-gray-800 shadow font-medium items-center w-full h-full rounded-full py-2 md:px-4 px-2 text-sm md:text-base">
           <span>{title}</span>
         </div>

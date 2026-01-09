@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
 
-const HeroSection = () => {
+const HomeHero = () => {
   const project_data = [
     {
       id: 1,
@@ -94,4 +94,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default HomeHero;

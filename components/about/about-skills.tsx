@@ -1,7 +1,7 @@
 import React from "react";
 import { BlueprintIcon, Browser, Database, PenNibIcon } from "@phosphor-icons/react/dist/ssr";
 
-const SkillsAbout = () => {
+const AboutSkills = () => {
   const skills_data = [
     {
       id: 1,
@@ -58,4 +58,4 @@ const SkillsAbout = () => {
   );
 };
 
-export default SkillsAbout;
+export default AboutSkills;

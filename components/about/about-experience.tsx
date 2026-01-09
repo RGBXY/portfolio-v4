@@ -2,7 +2,7 @@ import React from "react";
 import SectionHeader from "../shared/section-header";
 import Image from "next/image";
 
-const ExperienceAbout = () => {
+const AboutExperience = () => {
   const experience_data = [
     {
       id: 1,
@@ -12,7 +12,7 @@ const ExperienceAbout = () => {
       duration: "May 2024 - Dec 2024",
       status: "Internship",
       role: "Front-End Developer",
-      opening: "Collaborated across diverse domains to craft scalable, user-centric solutions that drive growth by improving their UX and product strategies.",
+      opening: "Interned as a Front-End Developer, contributing to user-focused interfaces and improving overall UI quality.",
       closing: "Revamped Police Digital Platforms & Web Products – Delivered end-to-end web solutions across internal systems and public-facing applications.",
       projects: [
         {
@@ -99,4 +99,4 @@ const ExperienceAbout = () => {
   );
 };
 
-export default ExperienceAbout;
+export default AboutExperience;

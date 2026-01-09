@@ -5,7 +5,7 @@ import Link from "next/link";
 import SectionHeader from "../shared/section-header";
 import { WorkCard, WorkCardDummy } from "../work/work-card";
 
-const WorkSection = () => {
+const HomeWork = () => {
   const work_data = [
     {
       id: 1,
@@ -67,4 +67,4 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default HomeWork;
