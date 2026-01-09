@@ -28,16 +28,16 @@ const AboutSection = () => {
 
         <div className="hidden lg:block">
           <div className="h-70 w-60 rotate-5 hover:rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute -top-10 left-10">
-            <Image src={"/image/about-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+            <Image src={"/image/about-1.jpg"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
           <div className="h-70 w-60 -rotate-5 hover:-rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute -top-10 right-10">
-            <Image src={"/image/hero-1.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+            <Image src={"/image/hero-1.jpg"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
           <div className="h-70 w-60 -rotate-5 hover:-rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute top-60 left-5">
-            <Image src={"/image/hero-3.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+            <Image src={"/image/hero-3.jpg"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
           <div className="h-70 w-60 rotate-5 hover:rotate-7 hover:scale-104 transition border border-gray-300 shadow-lg bg-background p-4 absolute top-60 right-5">
-            <Image src={"/image/about-explore.png"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
+            <Image src={"/image/about-explore.jpg"} alt="image" width={400} height={400} className="h-52 w-full object-cover" />
           </div>
         </div>
       </div>

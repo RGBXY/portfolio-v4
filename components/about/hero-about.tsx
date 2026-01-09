@@ -11,19 +11,19 @@ const HeroAbout = () => {
 
           <div className="mt-14 w-full flex items-center justify-center font-serif text-center">
             <div className="lg:h-80 lg:w-70 md:h-80 md:w-70 h-40 w-35 flex flex-col md:gap-3 gap-0.5 md:p-4 p-2 bg-white border border-gray-300 shadow-xl -rotate-4 z-5 hover:rotate-0 hover:scale-105 transition">
-              <Image src={"/image/about-music.png"} alt="image-2" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />
+              <Image src={"/image/about-music.jpg"} alt="image-2" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />
               <h1 className="md:text-3xl">Cafe & Music</h1>
             </div>
             <div className="lg:h-80 lg:w-70 md:h-80 md:w-70 h-40 w-35 flex flex-col md:gap-3 gap-0.5 md:p-4 p-2 bg-white border border-gray-300 shadow-xl  rotate-4 translate-y-6 -ml-6 z-4 hover:rotate-0 hover:scale-105 transition">
-              <Image src={"/image/about-explore.png"} alt="image-2" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />
+              <Image src={"/image/about-explore.jpg"} alt="image-2" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />
               <h1 className="md:text-3xl">Exploring Place</h1>
             </div>
             <div className="lg:h-80 lg:w-70 md:h-80 md:w-70 h-40 w-35 flex flex-col md:gap-3 gap-0.5 md:p-4 p-2 bg-white border border-gray-300 shadow-xl -ml-6 -rotate-4 z-3 hover:rotate-0 hover:scale-105 transition">
-              <Image src={"/image/hero-1.png"} alt="image-1" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />
+              <Image src={"/image/hero-1.jpg"} alt="image-1" width={400} height={400} className="w-full lg:h-59 md:h-57 h-30 border border-gray-300 object-cover" />
               <h1 className="md:text-3xl">Traveling</h1>
             </div>
             <div className="lg:h-80 lg:w-70 h-80 w-70 lg:flex flex-col hidden gap-3 p-4 bg-white border border-gray-300 shadow-xl -ml-6 rotate-4 translate-y-6 hover:rotate-0 hover:scale-105 transition">
-              <Image src={"/image/hero-5.png"} alt="image-1" width={400} height={400} className="w-full lg:h-59 h-57 object- border border-gray-300cover" />
+              <Image src={"/image/hero-5.jpg"} alt="image-1" width={400} height={400} className="w-full lg:h-59 h-57 object- border border-gray-300cover" />
               <h1 className="md:text-3xl">Bookies</h1>
             </div>
           </div>

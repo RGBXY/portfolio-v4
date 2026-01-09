@@ -7,15 +7,15 @@ const HeroSection = () => {
   const project_data = [
     {
       id: 1,
-      image: "/project/project-mu-2.png",
+      image: "/project/project-mu-2.jpg",
     },
     {
       id: 2,
-      image: "/project/project-mu-1.png",
+      image: "/project/project-mu-1.jpg",
     },
     {
       id: 3,
-      image: "/project/project-mu-3.png",
+      image: "/project/project-mu-3.jpg",
     },
   ];
 

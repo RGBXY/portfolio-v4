@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const BookAboutCard = () => {
@@ -16,7 +17,7 @@ const BookAboutCard = () => {
       <div className="w-45 h-60 lg:right-5 lg:bottom-auto lg:translate-none -bottom-10 right-1/2 translate-x-1/2   absolute">
         <Image
           className="w-full h-full z-10 -rotate-6 group-hover:-rotate-8 group-hover:scale-105 transition relative shadow-inner border object-cover object-top border-gray-300 rounded-xl overflow-hidden flex items-center justify-center"
-          src={"/image/book-cover.png"}
+          src={"/image/book-cover.jpg"}
           alt="profile"
           width={800}
           height={800}
@@ -34,27 +35,32 @@ const AlbumAboutCard = () => {
     {
       id: 1,
       name: "Doolittle",
-      img: "/image/album-3.png",
+      img: "/image/album-3.jpg",
+      link: "https://open.spotify.com/album/0DQyTVcDhK9wm0f6RaErWO?si=uS1t33aESw2UlnZvHMhavA",
     },
     {
       id: 2,
       name: "The Dark Side of The Moon",
-      img: "/image/album.png",
+      img: "/image/album.jpg",
+      link: "https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv?si=NqvWpNX1QoaowqQ0kzOEaA",
     },
     {
       id: 3,
       name: "Wish You Were Here",
-      img: "/image/album-2.png",
+      img: "/image/album-2.jpg",
+      link: "https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw?si=JdIOPrvZQIGhh6OlYE0C7A",
     },
     {
       id: 4,
-      name: "",
-      img: "/image/album-6.png",
+      name: "Niandra LaDes And Usually Just A T-Shirt",
+      img: "/image/album-6.jpg",
+      link: "https://open.spotify.com/album/4wTLTb4VpQtTxmeyyFOFVj?si=aesN-B3eR3mCiXWhqUbSWA",
     },
     {
       id: 5,
-      name: "",
-      img: "/image/album-7.png",
+      name: "Stadium Arcadium",
+      img: "/image/album-7.jpg",
+      link: "https://open.spotify.com/album/7xl50xr9NDkd3i2kBbzsNZ?si=l_rIOGEHRRij7dDRGlzIvw",
     },
   ];
 
@@ -66,13 +72,15 @@ const AlbumAboutCard = () => {
       <div className="flex mt-12 items-center animate-marquee w-max will-change-transform hover:paused">
         <div className="flex shrink-0 gap-8 pe-8">
           {album_data.map((data) => (
-            <div key={data.id} className="h-35 w-35 relative shadow-md shadow-gray-400 group shrink-0 flex justify-center items-center">
-              <Image className="w-full h-full" src={data.img} alt={data.name} width={800} height={800} />
-              <div className="absolute group-hover:-translate-y-12 top-0 rounded-full -z-1 h-[92%] w-[92%] duration-300 bg-black left-1/2 -translate-x-1/2 flex items-center justify-center transition">
-                <Image src={"/image/vinyl.webp"} alt="hai" width={400} height={400} className="h-full w-full paused group-hover:play-state-initial animate-spin relative" />
-                <Image src={data.img} alt="hai" width={400} height={400} className="h-14 w-14 z-10  absolute rounded-full paused group-hover:play-state-initial animate-spin " />
+            <Link target="__blank" key={data.id} href={data.link}>
+              <div className="h-35 w-35 relative shadow-md shadow-gray-400 group shrink-0 flex justify-center items-center">
+                <Image className="w-full h-full" src={data.img} alt={data.name} width={800} height={800} />
+                <div className="absolute group-hover:-translate-y-12 top-0 rounded-full -z-1 h-[92%] w-[92%] duration-300 bg-black left-1/2 -translate-x-1/2 flex items-center justify-center transition">
+                  <Image src={"/image/vinyl.webp"} alt="hai" width={400} height={400} className="h-full w-full paused group-hover:play-state-initial animate-spin relative" />
+                  <Image src={data.img} alt="hai" width={400} height={400} className="h-14 w-14 z-10  absolute rounded-full paused group-hover:play-state-initial animate-spin " />
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -105,7 +113,7 @@ const MovieAboutCard = () => {
         <p className="text-gray-700 lg:w-full mx-auto max-w-70">Enjoying films that inspire ideas and new perspectives.</p>
       </div>
       <div className="absolute lg:-bottom-14 md:-bottom-4 -bottom-4 left-1/2 -translate-x-1/2 w-79 group-hover:scale-111 scale-110 border-gray-300 transition">
-        <Image src={"/image/tv.png"} alt="hai" width={400} height={400} className="h-full" />
+        <Image src={"/image/tv.jpg"} alt="hai" width={400} height={400} className="h-full" />
       </div>
     </div>
   );
@@ -119,7 +127,7 @@ const GameAboutCard = () => {
         <p className="text-gray-600 w-70 lg:mx-0 mx-auto">Playing games to relax, explore stories, and enjoy creative worlds.</p>
       </div>
       <div className="relative flex-1 lg:flex-none h-30 lg:w-50 w-70 lg:mx-0 mx-auto">
-        <Image src={"/image/game.png"} alt="mail" width={800} height={800} className="absolute h-full w- shadow lg:group-hover:scale-105 transition border border-gray-300 rounded-xl" />
+        <Image src={"/image/game.jpg"} alt="mail" width={800} height={800} className="absolute h-full w- shadow lg:group-hover:scale-105 transition border border-gray-300 rounded-xl" />
       </div>
     </div>
   );
